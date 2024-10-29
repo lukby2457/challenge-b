@@ -34,7 +34,7 @@ const useKakaoMap = () => {
 
     setTimeout(() => {
       window.location.href = fallbackLink;
-    }, 1500);
+    }, 10000);
     // setTimeout(() => {
     //   window.location.href = webLink;
     // }, 1500);
