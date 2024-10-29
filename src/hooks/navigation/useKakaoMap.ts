@@ -8,7 +8,6 @@ const useKakaoMap = () => {
     endCoords: { epLat: number; epLng: number };
     name: string
   }) => {
-    const { spLat, spLng } = startCoords;
     const { epLat, epLng } = endCoords;
 
     const androidScheme = `kakaomap://route?sp=&ep=${epLat},${epLng}&by=CAR`;
