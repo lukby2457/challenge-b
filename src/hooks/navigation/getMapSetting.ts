@@ -32,8 +32,8 @@ export const getMapSettings = (
       return {
         ...baseSettings,
         scheme: isAndroid
-          ? `nmap://route/car?dlat=${epLat}&dlng=${epLng}&appname=app.vercel.challenge-b-iota`
-          : `nmap://route/car?dlat=${epLat}&dlng=${epLng}&appname=app.vercel.challenge-b-iota`,
+          ? `nmap://route/car?dlat=${epLat}&dlng=${epLng}&dname=${encodeURIComponent(name)}&appname=app.vercel.challenge-b-iota`
+          : `nmap://route/car?dlat=${epLat}&dlng=${epLng}&dname=${encodeURIComponent(name)}&appname=app.vercel.challenge-b-iota`,
         webLink: `https://map.naver.com/v5/directions/-/${name},${epLat},${epLng}`,
         fallbackLink: isAndroid
           ? 'market://details?id=com.nhn.android.nmap'
