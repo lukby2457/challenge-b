@@ -16,7 +16,11 @@ const useMap = () => {
     const { scheme, webLink, fallbackLink } = getMapSettings(app, epLat, epLng, name, isAndroid, isIOS);
 
     if (!isAndroid && !isIOS) {
-      window.location.href = webLink;
+      if (webLink) {
+        window.location.href = webLink;
+      } else if (app === 'tmap') {
+        alert('웹에서는 T맵을 사용할 수 없습니다.');
+      }
       return;
     }
 
