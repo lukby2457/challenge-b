@@ -21,7 +21,7 @@ const useKakaoMap = () => {
     } else if (isIOS) {
       scheme = iosScheme;
       fallbackLink = appStoreLink;
-      timeoutDuration = 10000;
+      timeoutDuration = 5000;
     } else {
       window.location.href = webLink;
       return;
