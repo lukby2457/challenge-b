@@ -47,7 +47,7 @@ export const getMapSettings = (
         scheme: isAndroid
           ? `tmap://route?goalx=${epLng}&goaly=${epLat}&by=CAR`
           : `tmap://route?goalx=${epLng}&goaly=${epLat}&by=CAR`,
-        webLink: `https://www.tmap.co.kr/tmap2/mobile/route?name=${name}&lat=${epLat}&lng=${epLng}`,
+        webLink: null,
         fallbackLink: isAndroid
           ? 'market://details?id=com.skt.tmap.ku'
           : isIOS
