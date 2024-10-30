@@ -32,8 +32,8 @@ export const getMapSettings = (
       return {
         ...baseSettings,
         scheme: isAndroid
-          ? `nmap://route/public?dlat=${epLat}&dlng=${epLng}&by=CAR`
-          : `nmap://route/public?dlat=${epLat}&dlng=${epLng}&by=CAR`,
+          ? `nmap://route/car?dlat=${epLat}&dlng=${epLng}`
+          : `nmap://route/car?dlat=${epLat}&dlng=${epLng}`,
         webLink: `https://map.naver.com/v5/directions/-/${name},${epLat},${epLng}`,
         fallbackLink: isAndroid
           ? 'market://details?id=com.nhn.android.nmap'
